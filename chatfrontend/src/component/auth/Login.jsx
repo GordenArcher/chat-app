@@ -1,5 +1,5 @@
 import AuthStyles from  './auth.module.css'
-import LoginImg from '../../assets/signup-BJI-YnLt.svg'
+import LoginImg from '../../assets/login-D1gCEgnq.svg'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -18,7 +18,13 @@ export const Login = () => {
         right : '20px',
         top : '50px',
         fontSize : '1.4rem'
-      } 
+    }
+    
+    const leftimage = {
+        width : '500px',
+        marginTop : '-120px',
+        marginLeft : '-100px'
+    }
     
 
   return (
@@ -36,8 +42,8 @@ export const Login = () => {
                             <h3>Hey there 👋, Welcome Back. Login to chat with your friends & colleagues</h3>
                         </div>
 
-                        <div className="left-image">
-                            <img src={LoginImg} alt="login image" />
+                        <div className={AuthStyles.leftimage}>
+                            <img src={LoginImg} alt="login image" style={leftimage} />
                         </div>
                     </div>
                 </div>
